@@ -3,9 +3,9 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.14"
+gem 'thin'
 
 group :production do
-  gem 'thin'
   gem 'watchr'
   gem 'rb-fsevent'
 end
