@@ -2,6 +2,7 @@
 
 body {
   background: #f8f8f8;
+  font-family: "myriad-pro",sans-serif;
 }
 
 .clear {
@@ -9,11 +10,13 @@ body {
 }
 
 .mono {
+  font-family: "hydrophilia-iced", "courier-prime", monospace;
+  font-weight: 700;
 }
 
 #pc {
-  background: url("/images/pc.png");
-  height: 1875px;
+  background: url("/images/pc.png") no-repeat center bottom;
+  height: 1620px;
   margin: 0 auto;
   padding: 0 150px;
   padding-top: 1px;
@@ -135,45 +138,43 @@ body {
 
     h1 {
       font-size: 46px;
-      font-weight: 500;
+      font-weight: 700;
       margin-bottom: 0;
     }
 
     h2 {
       font-size: 34px;
-      font-weight: normal;
-      margin-top: 10px;
+      font-weight: 500;
+      margin-top: 0px;
     }
 
     h4 {
       font-size: 20px;
       font-weight: normal;
+      margin: 0 0 20px 0;
+      padding: 0;
     }
 
     form {
-      margin-top: -10px;
+      
       .field {
-        display: inline;
+        float: left;
       }
 
       .actions {
-        display: inline;
-        margin-top: 10px;
       }
 
       input[type="text"] {
-        margin-top: -20px;
+        box-shadow: 0 1px 2px white;
       }
 
       input[type="submit"] {
         background: url("/images/sign.png");
         border: none;
         height: 49px;
-        margin-top: 5px;
-        padding: 17px;
+        padding: 16px;
         text-indent: -9999px;
         width: 204px;
-
         -webkit-appearance: none;
       }
     }
@@ -237,6 +238,7 @@ form {
 
   p {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .use-examples {
