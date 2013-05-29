@@ -9,8 +9,13 @@ body {
   clear: both;
 }
 
+@font-face{
+  font-family:'FixedSys';
+  src: url('/font/Fixedsys500c.ttf') format('truetype');
+}
+
 .mono {
-  font-family: "hydrophilia-iced", "courier-prime", monospace;
+  font-family: FixedSys, monospace;
   font-weight: 700;
 }
 
