@@ -9,9 +9,12 @@ body {
   clear: both;
 }
 
-@font-face{
-  font-family:'FixedSys';
-  src: url('/font/Fixedsys500c.ttf') format('truetype');
+@font-face {
+	font-family: 'FixedSys';
+	src: url('/font/Fixedsys500c.eot');
+	src: local('☺'), url('/font/Fixedsys500c.woff') format('woff'), url('/font/Fixedsys500c.ttf') format('truetype'), url('/font/Fixedsys500c.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .mono {

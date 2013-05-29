@@ -1,3 +1,5 @@
+var audio = new Audio("/audio/typing.wav");
+
 $(function() {
   var lines = [
     "There's something in your email.",
@@ -35,6 +37,8 @@ $.fn.typeOut = function(text, callback) {
 
   // Our promise so we can return when we're complete
   var df = $.Deferred();
+  
+  audio.play();
 
   // loop through each char and print them out one at a time using delay.
   $.each(text.split(''), function(i, char) {
