@@ -2,7 +2,7 @@
 
 body {
   background: #f8f8f8;
-  font-family: "myriad-pro",sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .clear {
@@ -329,4 +329,71 @@ footer {
       display: inline;
     }
   }
+}
+
+select {
+  border: none;  
+  background:  
+  none; outline:  
+  none; opacity: 0;  
+  -webkit-appearance: none;  
+  filter: alpha(opacity=0); 
+}
+
+.selectbox select {  
+  z-index: 10;
+  height: 50px;
+  position: relative;  
+  border: none;  
+  background: none;  
+  outline: none;  
+  padding: 4px 12px 4px 32px;  
+  opacity: 0;  
+  -webkit-appearance: none;  
+  filter: alpha(opacity=0);  
+}  
+
+.selecttext {  
+  z-index: 9;  
+  position: absolute;  
+  left: 15px;
+  display: inline-block;  
+  *display: inline;
+  zoom: 1;
+  line-height: 50px;
+  background: transparent;
+  font-size: 26px;
+  color: black; 
+} 
+
+.select-container {
+  text-align: center;
+  padding: 30px 0;
+}
+ 
+.selectbox {  
+  position: relative;  
+  margin: 0 auto;
+  display: inline-block;
+  *display: inline;  
+  zoom: 1;
+  height: 50px;
+  border: 3px solid black;  
+  background: white;  
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);  
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, #e6e6e6));  
+  background-image: linear-gradient(top, white, #e6e6e6);  
+  border-radius: 2px;
+  box-shadow: inset 2px 2px 4px #ccc, 0 1px 1px #d2d2d2;  
+}
+
+.select-arrow {
+  background: url('/images/select-arrow.jpg');
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 114px;
+  z-index: 9;
 }
