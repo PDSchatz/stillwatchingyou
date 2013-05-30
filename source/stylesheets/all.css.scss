@@ -24,12 +24,17 @@ body {
 
 #pc {
   background: url("/images/pc.png") no-repeat center bottom;
-  height: 1660px;
+  height: 1620px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0;
   padding-top: 1px;
+  width: 100%;
   position: relative;
-  width: 900px;
+  
+  .inner {
+    width: 900px;
+    margin: 0 auto;
+  }
 
   .type {
     color: #fff;
@@ -134,15 +139,21 @@ body {
 
 
   #sign {
-    background: url("/images/metal-trim.png");
+    background: transparent url("/images/metal-trim.png") no-repeat center top;
     height: 320px;
-    margin-left: -574px;
-    padding: 0 216px;
-    padding-bottom: 100px;
+    //margin-left: -574px;
+    //padding: 0 216px;
+    //padding-bottom: 100px;
     position: absolute;
     left: 50%;
-    bottom: -70px;
-    width: 826px;
+    margin-left: -415px;
+    bottom: 30px;
+    width: 830px;
+    padding: 0;
+    
+    .pad {
+      padding: 0 35px;
+    }
 
     h1 {
       font-size: 46px;
