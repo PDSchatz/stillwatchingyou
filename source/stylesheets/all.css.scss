@@ -22,12 +22,71 @@ body {
   font-weight: 700;
 }
 
+#use-examples {
+  text-align: center;
+  
+  ul {
+    margin: 0 auto;
+    width: 740px;
+    overflow: hidden;
+    padding-top: 40px;
+    list-style: none;
+    
+    li {
+      list-style: none;
+      font-family: FixedSys, monospace;
+      float: left;
+      width: 185px;
+      text-align: center;
+      font-size: 18px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      padding-top: 80px;
+      cursor: pointer;
+      
+      &.mail {
+        background-image: url('/images/icon-mail.jpg');
+      }
+      
+      &.files {
+        background-image: url('/images/icon-files.jpg');
+      }
+      
+      &.files-x {
+        background-image: url('/images/icon-files-x.jpg');
+      }
+      
+      &.calls {
+        background-image: url('/images/icon-calls.jpg');
+      }
+      
+      &.storage {
+        background-image: url('/images/icon-storage.jpg');
+      }
+      
+      &.messages {
+        background-image: url('/images/icon-messages.jpg');
+      }
+      
+      &.data {
+        background-image: url('/images/icon-data.jpg');
+      }
+    }
+  }
+  
+  ul:first-child {
+    border-bottom: 8px solid black;
+    padding-bottom: 40px;
+  }
+}
+
 #pc {
   background: url("/images/pc.png") no-repeat center bottom;
   height: 1620px;
   margin: 0 auto;
   padding: 0;
   padding-top: 1px;
+  background-color: black;
   width: 100%;
   position: relative;
   
@@ -443,6 +502,7 @@ input[type="checkbox"]:checked + label span {
 #modal {
   width: 850px;
   position: fixed;
+  display: none;
   left: 50%;
   top: 200px;
   margin-left: -425px;
