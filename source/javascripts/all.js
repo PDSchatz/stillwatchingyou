@@ -14,5 +14,9 @@ $(document).ready(function() {
           var val = $(this).children("option:selected").text();  
           $(this).next(".selecttext").text(val);  
       }); 
-  }); 
+  });
+  
+  $('#modal .close').click(function() {
+    $('#modal').fadeOut()
+  })
 })
