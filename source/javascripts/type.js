@@ -2,12 +2,10 @@ var audio = new Audio("/audio/typing.wav");
 
 $(function() {
   var lines = [
-    "There's something in your email.",
-    "Something embarrassing. Or illegal.",
-    "Something you thought you deleted.",
-    "Thanks to outdated laws, the U.S. government can see it.",
-    "Want to see what we see? Use the buttons below to search your own email.",
-    "We're searching your friends next. You should warn them...",
+    "There's something in your email you thought you deleted.",
+    "Your email and your friend's give the government real power.",
+    "What could they find out about you? Use the buttons below to search your own email.",
+    "We're searching your friends next. You should warn them..."
   ]
 
   $('.type-1').typeOut(lines[0]).then(function() {
@@ -15,15 +13,12 @@ $(function() {
   }).then(function() {
     return $('.type-3').typeOut(lines[2]);
   }).then(function() {
-    return $('.type-4').typeOut(lines[3]);
-  }).then(function() {
-    return $('.type-5').typeOut(lines[4]);
-  }).then(function() {
     return $('#search-media').fadeIn(1000);
   }).then(function() {
     setTimeout(function() {
       $('.disclaimer').fadeIn(1000, function() {
-        $('.type-6').typeOut(lines[5]).then(function() {
+        $('.type-6').typeOut(lines[3]).then(function() {
+          audio.pause();
           $('#pc .social-buttons').fadeIn(1000);
         });
       });
@@ -49,7 +44,7 @@ $.fn.typeOut = function(text, callback) {
 
   setTimeout(function() {
     df.resolve();
-  }, (text.length + 15) * delay);
+  }, (text.length + 10) * delay);
 
   return df;
 }

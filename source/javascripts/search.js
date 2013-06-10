@@ -8,7 +8,19 @@ $(function() {
     var oldText = current.html();
     current.html(next.html());
     next.html(oldText);
-
-    // @todo change link attr's when we get them
+    
+    var vendor = $(this).attr('data-vendor');
+    
+    if(vendor == 'facebook') {
+      $('#search-media .content a').each(function() {
+        $(this).attr('href', 'https://www.facebook.com/messages/search?action=recent-messages&query=' + $(this).attr('data-query'));
+      });
+    } else {
+      $('#search-media .content a').each(function() {
+        var query = $(this).attr('data-query');
+        
+        //alert(links[vendor][query]);
+      });
+    }
   });
 });
