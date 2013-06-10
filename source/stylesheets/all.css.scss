@@ -147,7 +147,7 @@ body {
   }
 
   .type {
-    color: #00ff00;
+    color: #3adc31;
     font-size: 34px;
     margin-left: auto;
     margin-right: auto;
@@ -193,6 +193,11 @@ body {
 
       a {
         color: #41ddf5;
+        margin: 0 10px;
+      }
+      
+      p + a {
+        margin-right: 0;
       }
     }
 
@@ -419,17 +424,9 @@ footer {
 
   #logos {
     a {
-      float: left;
-    }
-
-    .fftf {
-      margin-top: 27px;
-      margin-right: 105px;
-    }
-
-    .eff {
-      margin-top: 7px;
-      margin-right: 105px;
+      display: block;
+      width: 428px;
+      margin: 0 auto;
     }
   }
   hr {
