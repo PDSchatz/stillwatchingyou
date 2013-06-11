@@ -280,6 +280,7 @@ body {
     h1 {
       font-size: 46px;
       font-weight: 700;
+      text-shadow: 0 1px 1px white;
       margin-bottom: 0;
     }
 
@@ -360,8 +361,9 @@ form {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 0;
+      margin-bottom: 0px;
       font-weight: 200;
+      margin-top: 50px;
       width: 800px;
     }
     &.center {
@@ -391,12 +393,30 @@ form {
     padding-left: 45px;
   }
   .social-buttons {
+    overflow: hidden;
     margin-left: 60px;
   }
 }
 
+#social-cta {
+  padding: 50px 0;
+  
+  h3 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
 .social-buttons {
-  margin-left: 20px;
+  overflow: hidden;
+  width: 650px;
+  margin: 0 auto;
+  
+  div a:first-child {
+    margin-left: 0;
+  }
+  
   .social {
     background: url("/images/social-buttons.png");
     display: inline;
@@ -485,7 +505,8 @@ select {
   outline: none;  
   padding: 4px 12px 4px 32px;  
   opacity: 0;  
-  -webkit-appearance: none;  
+  -webkit-appearance: none;
+  width: 550px;
   filter: alpha(opacity=0);  
 }  
 
@@ -500,6 +521,11 @@ select {
   background: transparent;
   font-size: 26px;
   color: black; 
+  font-size: 24px;
+  max-width: 415px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
 } 
 
 .select-container {
