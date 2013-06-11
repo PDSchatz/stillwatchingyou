@@ -4,7 +4,8 @@ $(function() {
   var lines = [
     "I am watching you. I know where you are and what you'll be doing next.",
     "I can target you and make you look like a suspect if I wanted to.",
-    "Want to see what I can do? Use the buttons below to look into your own email."
+    "Want to see what I can do? Use the buttons below to look into your own email.",
+    "We're searching your friends next. You should warn them."
   ]
 
   $('.type-1').typeOut(lines[0]).then(function() {
@@ -13,11 +14,13 @@ $(function() {
     return $('.type-3').typeOut(lines[2]);
   }).then(function() {
     audio.pause();
+    $('.disclaimer').fadeIn(1000);
     return $('#search-media').fadeIn(1000);
   }).then(function() {
+    return $('.type-6').typeOut(lines[3]);
+  }).then(function() {
     setTimeout(function() {
-      $('.disclaimer').fadeIn(1000, function() {
-      });
+      $('.social-buttons').fadeIn(1000);
     }, 300);
   });
 });
