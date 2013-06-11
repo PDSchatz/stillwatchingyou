@@ -17,7 +17,6 @@ $(function() {
   }).then(function() {
     setTimeout(function() {
       $('.disclaimer').fadeIn(1000, function() {
-        $('#pc .social-buttons').fadeIn(1000);
       });
     }, 300);
   });

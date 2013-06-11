@@ -22,9 +22,8 @@ body {
   font-weight: 700;
 }
 
-#use-examples {
+.use-examples {
   text-align: center;
-  background: url('/images/bubbles.jpg') no-repeat right top;
   
   .popup {
     position: absolute;
@@ -75,11 +74,30 @@ body {
     }
   }
   
+  .info {
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 740px;
+    margin: 0 auto;
+    
+    img {
+      border-radius: 50%;
+      width: 96px;
+      height: 96px;
+      margin: 0 0 20px 0;
+    }
+    
+    p {
+      font-size: 16px;
+      color: white;
+    }
+  }
+  
   ul {
     margin: 0 auto;
     width: 740px;
     min-height: 140px;
-    padding-top: 40px;
+    padding: 0;
     list-style: none;
     
     li {
@@ -92,8 +110,16 @@ body {
       background-repeat: no-repeat;
       background-position: center top;
       position: relative;
-      padding-top: 80px;
+      padding-bottom: 50px;
       cursor: pointer;
+      color: white;
+      
+      i {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 60px;
+        text-align: center;
+      }
       
       &.mail {
         background-image: url('/images/icon-mail.jpg');
@@ -124,15 +150,10 @@ body {
       }
     }
   }
-  
-  ul:first-child {
-    border-bottom: 8px solid black;
-    padding-bottom: 20px;
-  }
 }
 
 #pc {
-  height: 1420px;
+  height: 1160px;
   margin: 0 auto;
   padding: 0;
   padding-top: 1px;
@@ -143,6 +164,14 @@ body {
   .inner {
     width: 900px;
     margin: 0 auto;
+  }
+  
+  .sign-wrapper {
+    background: black url('/images/pc.png') no-repeat center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
   .type {
@@ -192,6 +221,7 @@ body {
 
       a {
         color: #41ddf5;
+        text-decoration: none;
         margin: 0 10px;
       }
       
@@ -215,14 +245,26 @@ body {
         text-shadow: 0 0 1px #000000;
 
         border-radius: 3px;
-        background: #6ff0fa; /* Old browsers */
-        background: -moz-linear-gradient(top, #6ff0fa 0%, #2374d6 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ff0fa), color-stop(100%,#2374d6)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #6ff0fa 0%,#2374d6 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #6ff0fa 0%,#2374d6 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #6ff0fa 0%,#2374d6 100%); /* IE10+ */
-        background: linear-gradient(to bottom, #6ff0fa 0%,#2374d6 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ff0fa', endColorstr='#2374d6',GradientType=0 ); /* IE6-9 */
+        background: #41ddf5; /* Old browsers */
+        background: -moz-linear-gradient(top, #41ddf5 0%, #11adc5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41ddf5), color-stop(100%,#11adc5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #41ddf5 0%,#11adc5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41ddf5', endColorstr='#11adc5',GradientType=0 ); /* IE6-9 */
+        
+        &:hover {
+          background: #81eeff; /* Old browsers */
+          background: -moz-linear-gradient(top, #81eeff 0%, #11adc5 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81eeff), color-stop(100%,#11adc5)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* IE10+ */
+          background: linear-gradient(to bottom, #81eeff 0%,#11adc5 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81eeff', endColorstr='#11adc5',GradientType=0 ); /* IE6-9 */
+        }
+
       }
     }
 
@@ -263,18 +305,11 @@ body {
   #sign {
     background: transparent url("/images/metal-trim.png") no-repeat center top;
     height: 320px;
-    //margin-left: -574px;
-    //padding: 0 216px;
-    //padding-bottom: 100px;
-    position: absolute;
-    left: 50%;
-    margin-left: -415px;
-    bottom: 30px;
     width: 830px;
-    padding: 0;
+    margin: 0 auto;
     
     .pad {
-      padding: 0 35px;
+      padding: 30px;
     }
 
     h1 {
@@ -283,6 +318,7 @@ body {
       font-weight: 700;
       text-shadow: 0 1px 1px white;
       margin-bottom: 10px;
+      margin-top: 0;
     }
 
     h2 {
@@ -313,13 +349,34 @@ body {
       }
 
       input[type="submit"] {
-        background: url("/images/sign.png");
         border: none;
         height: 49px;
         padding: 16px;
-        text-indent: -9999px;
         width: 204px;
-        -webkit-appearance: none;
+        color: white;
+        border: 1px solid #11adc5;
+        text-shadow: 0 0 1px #000000;
+        border-radius: 3px;
+        background: #41ddf5; /* Old browsers */
+        background: -moz-linear-gradient(top, #41ddf5 0%, #11adc5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#41ddf5), color-stop(100%,#11adc5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #41ddf5 0%,#11adc5 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #41ddf5 0%,#11adc5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41ddf5', endColorstr='#11adc5',GradientType=0 ); /* IE6-9 */
+        
+        
+        &:hover {
+          background: #81eeff; /* Old browsers */
+          background: -moz-linear-gradient(top, #81eeff 0%, #11adc5 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81eeff), color-stop(100%,#11adc5)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #81eeff 0%,#11adc5 100%); /* IE10+ */
+          background: linear-gradient(to bottom, #81eeff 0%,#11adc5 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81eeff', endColorstr='#11adc5',GradientType=0 ); /* IE6-9 */
+        }
       }
     }
 
@@ -439,6 +496,78 @@ form {
   }
 }
 
+.wrapper {
+  padding: 60px 0;
+  
+  p {
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #545454;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    padding-top: 0;
+    padding: 0 0 60px 0;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  &.intro {
+    text-align: center;
+    background: #eaeaea;
+    box-shadow: inset 0 2px 2px #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  &.less {
+    //background: #eaeaea;
+    background: lighten(#c0df37, 20%);
+    border-bottom: 1px solid #ccc;
+    
+    li {
+      color: black;
+    }
+    
+    .info p {
+      color: black;
+    }
+    
+    i:hover {
+      color: #8fc50d;
+    }
+  }
+  
+  &.more {
+    background: black;
+    h2 {
+      color: white;
+    }
+    
+    i:hover {
+      color: #fe0000;
+    }
+  }
+  
+  &.agencies {
+    background: #eaeaea;
+    box-shadow: inset 0 2px 2px #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+}
+
 footer {
   background: #ededed;
   padding-bottom: 20px;
@@ -528,11 +657,6 @@ select {
   white-space: nowrap;
   text-align: left;
 } 
-
-.select-container {
-  text-align: center;
-  padding: 70px 0 50px 0;
-}
  
 .selectbox {  
   position: relative;  

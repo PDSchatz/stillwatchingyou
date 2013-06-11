@@ -20,12 +20,14 @@ $(document).ready(function() {
     $('#modal').fadeOut()
   });
   
-  $('#use-examples li').hover(function() {
+  $('.use-examples li').hover(function() {
     $('.popup').remove();
     var isProtected = $(this).attr('data-protected');
     var text = $(this).attr('data-text');
     
-    $(this).append('<div class="popup ' + isProtected + '"><div class="icon"> </div><p>' + text + '</p></div>');
+    $(this).parents('.use-examples').find('.info p').html(text);
+    
+    //$(this).append('<div class="popup ' + isProtected + '"><div class="icon"> </div><p>' + text + '</p></div>');
   }, function() {
     $('.popup').remove();
   });
