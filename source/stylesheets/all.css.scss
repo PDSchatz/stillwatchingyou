@@ -132,7 +132,6 @@ body {
 }
 
 #pc {
-  background: url("/images/pc.png") no-repeat center bottom;
   height: 1420px;
   margin: 0 auto;
   padding: 0;
@@ -228,11 +227,12 @@ body {
     }
 
     .disclaimer {
-      background: #ffffff;
       display: none;
       padding: 10px;
       position: absolute;
-      width: 830px;
+      width: 820px;
+      background: transparent url('/images/disclaimer.png') no-repeat top left;
+      height: 81px;
 
       img {
         float: left;
@@ -279,9 +279,10 @@ body {
 
     h1 {
       font-size: 46px;
+      line-height: 46px;
       font-weight: 700;
       text-shadow: 0 1px 1px white;
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -308,7 +309,7 @@ body {
 
       input[type="text"] {
         box-shadow: 0 1px 2px white;
-        max-width: 147px;
+        width: 518px;
       }
 
       input[type="submit"] {
