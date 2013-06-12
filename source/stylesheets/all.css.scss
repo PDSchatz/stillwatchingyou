@@ -783,17 +783,39 @@ input[type="checkbox"]:checked + label span {
     }
 
     input[type="text"] {
+      width: 508px;
       -webkit-box-shadow: inset 5px 5px  5px rgba(0,0,0,0.09);
     }
 
     input[type="submit"] {
-      background: url("/images/sign.png");
       border: none;
       height: 49px;
       padding: 16px;
-      text-indent: -9999px;
       width: 204px;
-      -webkit-appearance: none;
+      color: white;
+      border: 1px solid #1bb613;
+      text-shadow: 0 0 1px #000000;
+      border-radius: 3px;
+      background: #3adc31; /* Old browsers */
+      background: -moz-linear-gradient(top, #3adc31 0%, #1bb613 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3adc31), color-stop(100%,#1bb613)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #3adc31 0%,#1bb613 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #3adc31 0%,#1bb613 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #3adc31 0%,#1bb613 100%); /* IE10+ */
+      background: linear-gradient(to bottom, #3adc31 0%,#1bb613 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3adc31', endColorstr='#1bb613',GradientType=0 ); /* IE6-9 */
+      
+      &:hover {
+        background: #76ff6e; /* Old browsers */
+        background: -moz-linear-gradient(top, #76ff6e 0%, #1bb613 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#76ff6e), color-stop(100%,#1bb613)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #76ff6e 0%,#1bb613 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #76ff6e 0%,#1bb613 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #76ff6e 0%,#1bb613 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #76ff6e 0%,#1bb613 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76ff6e', endColorstr='#1bb613',GradientType=0 ); /* IE6-9 */
+
+      }
     }
   }
 }

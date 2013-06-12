@@ -1,7 +1,7 @@
 //= require jquery.min
 //= require type
 //= require search
-$(document).ready(function() {
+$(document).ready(function() {  
   $("select").each(function(){  
       $(this).wrap('<div class="selectbox"/>');  
       $(this).after("<span class='selecttext'></span><span class='select-arrow'></span>");  

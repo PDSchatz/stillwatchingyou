@@ -22,6 +22,10 @@ $(function() {
       $('.type-6').html(lines[3]);
       $('.type-6').fadeIn(1000);
       $('.social-buttons').fadeIn(1000);
+      
+      setTimeout(function() {
+        $('#modal').fadeIn();
+      }, 3000);
     }, 300);
   });
 });
