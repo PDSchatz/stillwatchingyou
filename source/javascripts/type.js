@@ -17,9 +17,10 @@ $(function() {
     $('.disclaimer').fadeIn(1000);
     return $('#search-media').fadeIn(1000);
   }).then(function() {
-    return $('.type-6').typeOut(lines[3]);
-  }).then(function() {
     setTimeout(function() {
+      $('.type-6').hide();
+      $('.type-6').html(lines[3]);
+      $('.type-6').fadeIn(1000);
       $('.social-buttons').fadeIn(1000);
     }, 300);
   });

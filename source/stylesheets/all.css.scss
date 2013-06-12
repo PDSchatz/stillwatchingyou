@@ -22,6 +22,12 @@ body {
   font-weight: 700;
 }
 
+@-moz-document url-prefix() {
+  .mono {
+    font-weight: 500;
+  }
+}
+
 .use-examples {
   text-align: center;
   
@@ -565,6 +571,13 @@ form {
     box-shadow: inset 0 2px 2px #ccc;
     border-bottom: 1px solid #ccc;
     text-align: center;
+  }
+  
+  h2.thin {
+    max-width: 900px !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
