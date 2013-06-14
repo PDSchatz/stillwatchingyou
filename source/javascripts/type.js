@@ -2,11 +2,15 @@ var audio = new Audio("/audio/typing.wav");
 
 $(function() {
   var lines = [
-    "I am watching you. I know where you are and what you'll be doing next.",
-    "I can target you and make you look like a suspect if I wanted to.",
-    "Want to see what I can do? Use the buttons below to look into your own email.",
+    $('.type-1').html(),
+    $('.type-2').html(),
+    $('.type-3').html(),
     "We're searching your friends next. You should warn them."
   ]
+  
+  $('.type-1').html('');
+  $('.type-2').html('');
+  $('.type-3').html('');
 
   $('.type-1').typeOut(lines[0]).then(function() {
     return $('.type-2').typeOut(lines[1]);
