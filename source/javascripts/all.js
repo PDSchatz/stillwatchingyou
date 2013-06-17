@@ -16,7 +16,8 @@ $(document).ready(function() {
       }); 
   });
   
-  $('.close').click(function() {
+  $('.close').click(function(e) {
+    e.preventDefault();
     $('.modal').fadeOut()
   });
   
