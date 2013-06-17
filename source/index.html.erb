@@ -2,6 +2,8 @@
 title: We're watching you. Sincerely, the Government.
 ---
 
+<div id="overlay"> </div>
+
 <div class="socialize" style="position: fixed; top: 10px; right: 10px; height: 350px; z-index: 9999">
 	<div id="fb-root"></div>
 			<script>(function(d, s, id) {
@@ -20,13 +22,13 @@ title: We're watching you. Sincerely, the Government.
 			</div>
  </div>
 
-<div id="modal">
+<div id="creep" class="modal">
   <a href="#" class="close">Close</a>
   <div class="title">Is this site creeping you out?</div>
   <div class="content">
     <p class="lead">Tell the U.S. Government: "Want to read my stuff? Go get a warrant."</p>
     
-    <form action="http://hq-nt.salsalabs.com/save" method="POST">
+    <form action="http://hq-nt.salsalabs.com/save" method="POST" class="salsa-form">
       <input type="hidden" name="object" value="supporter">
       <input type="hidden" name="organization_KEY" value="501" />
       <div class="field">
@@ -38,6 +40,25 @@ title: We're watching you. Sincerely, the Government.
     </form>
 
     <!--<p><input type="checkbox" id="c1" /><label for="c1"><span></span> Sign up to receive occasional updates about defending online privacy.</label></p>-->
+  </div>
+</div>
+<div id="safe" class="modal">
+  <a href="#" class="close">Close</a>
+  <div class="title">You're safe for now.</div>
+  <div class="content">
+    <p class="lead">Good thing this site was made by an advocacy group and not the governament, huh? Want to freak out your friends? Share this.</p>
+    
+    <div class="social-buttons">
+      <div>
+        <a href="#" class="social facebook"></a>
+        <a href="#" class="social twitter"></a>
+      </div>
+      <div class="clear"></div>
+      <div>
+        <a href="#" class="social tumblr"></a>
+        <a href="#" class="social google"></a>
+      </div>
+    </div>
   </div>
 </div>
 <div id="pc">
@@ -95,6 +116,7 @@ title: We're watching you. Sincerely, the Government.
       
       
       <div class="content" id="content-hotmail" style="display: none;">
+        <p style="color: white;">For Hotmail, you have to login first or the searches won't work.</p>
         <a data-query="drugs" class="btn" href="http://blu167.mail.live.com/default.aspx?st=smoke+pot%22+OR+%22smoked+pot%22+OR+%22smoke+herb%22+OR+%22smoked+herb%22+OR+%22bong%22+OR+%22get+weed%22+OR+%22buy+weed%22+OR+%22smoke+a+blunt%22+OR+%22smoked+a+blunt%22+OR+%22shrooms%22+OR+%22MDMA%22+OR+%22smoke+a+joint%22+OR+%22smoked+a+joint%22+OR+%22did+acid%22+OR+%22tried+weed%22+OR+%22ganja%22+OR+%22got+so+high%22+OR+%22get+blazed%22+OR+%22got+blazed%22+OR+%22did+acid%22+OR+%22try+mushrooms%22+OR+%22sell+weed%22+OR+%22MDMA%22+OR+%22smoked+opium%22+OR+%22dropped+acid%22">DRUGS</a>
         <a data-query="sex" class="btn" href="http://blu167.mail.live.com/default.aspx?st=i+want+you+so+bad%22+OR+%22sexy+ass%22+OR+%22your+cock%22+OR+%22my+cock%22+OR+%22my+tits%22+OR+%22your+tits%22+OR+%22my+pussy%22+OR+%22your+pussy%22+OR+%22my+cunt%22+OR+%22your+cunt%22+OR+%22dildo%22+OR+%22BDSM%22+OR+%22wanna+fuck%22+OR+%22go+down+on+you%22+OR+%22go+down+on+me%22+OR+%22your+clit%22+OR+%22my+clit%22+OR+%22I+want+to+taste+you%22+OR+%22suck+me+off%22+OR+%22suck+you+off%22+OR+%22had+sex+with%22+OR+%22made+out+with%22+OR+%22had+sex+in%22+OR+%22make+me+cum%22+OR+%22make+you+cum%22">SEX</a>
         <a data-query="partying" class="btn" href="http://blu167.mail.live.com/default.aspx?st=i%27m+so+drunk%22+OR+%22so+drunk+last+night%22+OR+%22i%27m+so+wasted%22+OR+%22we+were+wasted%22+OR+%22got+so+fucked+up%22+OR+%22so+trashed%22+OR+%22hangover%22+OR+%22hungover%22+OR+%22got+so+drunk%22+OR+%22got+drunk%22+OR+%22get+drunk%22+OR+%22got+wasted%22+OR+%22get+wasted%22+OR+%22drove+drunk%22+OR+%22got+so+drunk%22+OR+%22tispy%22+OR+%22i%27m+buzzed%22">PARTYING</a>
@@ -135,7 +157,7 @@ title: We're watching you. Sincerely, the Government.
         <h1>This is no joke,<br />and unconstitutional.</h1>
         <h4>The US government has secretly built the largest surveillance system in history - they have our phone calls, location, and more. Tell us if you think this is wrong and want to help stop it.</h4>
 
-        <form action="http://hq-nt.salsalabs.com/save" method="POST">
+        <form action="http://hq-nt.salsalabs.com/save" method="POST" class="salsa-form"> 
           <input type="hidden" name="object" value="supporter">
           <input type="hidden" name="organization_KEY" value="501" />
           <div class="field">

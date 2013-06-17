@@ -11,22 +11,25 @@ $(function() {
   $('.type-1').html('');
   $('.type-2').html('');
   $('.type-3').html('');
-
-  $('.type-1').typeOut(lines[0]).then(function() {
-    return $('.type-2').typeOut(lines[1]);
-  }).then(function() {
-    return $('.type-3').typeOut(lines[2]);
-  }).then(function() {
-    audio.pause();
-    $('.disclaimer').fadeIn(1000);
-    return $('#search-media').fadeIn(1000);
-  }).then(function() {
-    setTimeout(function() {
-      $('.type-6').hide();
-      $('.type-6').html(lines[3]);
-      $('.type-6').fadeIn(1000);
-      $('.social-buttons').fadeIn(1000);
-    }, 300);
+  
+  audio.addEventListener('canplaythrough', function() {
+    $('.type-1').typeOut(lines[0]).then(function() {
+      return $('.type-2').typeOut(lines[1]);
+    }).then(function() {
+      return $('.type-3').typeOut(lines[2]);
+    }).then(function() {
+      audio.pause();
+      $('.disclaimer').fadeIn(1000);
+      return $('#search-media').fadeIn(1000);
+    }).then(function() {
+      setTimeout(function() {
+        $('.type-6').hide();
+        $('.type-6').html(lines[3]);
+        $('.type-6').fadeIn(1000);
+        $('.social-buttons').fadeIn(1000);
+      }, 300);
+    });
+    
   });
 });
 

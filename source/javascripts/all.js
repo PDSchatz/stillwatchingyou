@@ -16,8 +16,8 @@ $(document).ready(function() {
       }); 
   });
   
-  $('#modal .close').click(function() {
-    $('#modal').fadeOut()
+  $('.close').click(function() {
+    $('.modal').fadeOut()
   });
   
   $('.use-examples li').hover(function() {
@@ -30,5 +30,21 @@ $(document).ready(function() {
     //$(this).append('<div class="popup ' + isProtected + '"><div class="icon"> </div><p>' + text + '</p></div>');
   }, function() {
     $('.popup').remove();
+  });
+  
+  $('.salsa-form').submit(function(e) {
+    e.preventDefault();
+    
+    $.ajax({
+      type: 'POST',
+      async: false,
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      success: function() {
+        
+      }
+    });
+    
+    $('#safe').fadeIn();
   });
 })
