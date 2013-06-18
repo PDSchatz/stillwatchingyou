@@ -159,7 +159,7 @@ body {
 }
 
 #pc {
-  height: 1500px;
+  height: 1560px;
   margin: 0 auto;
   padding: 0;
   padding-top: 1px;
@@ -191,7 +191,7 @@ body {
   #search-media {
     $padding: 20px;
 
-    height: 300px;
+    height: 360px;
     border: 5px solid #fff;
     display: none;
     margin-top: 100px;
@@ -244,9 +244,9 @@ body {
         color: #fff;
         display: inline-block;
         font-size: 20px;
-        margin-bottom: 15px;
-        margin-right: 15px;
-        padding: 10px 40px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 10px 20px;
         text-decoration: none;
 
         text-shadow: 0 0 1px #000000;
@@ -282,7 +282,7 @@ body {
       width: 820px;
       background: transparent url('/images/disclaimer.png') no-repeat top left;
       height: 81px;
-      top: 300px;
+      top: 360px;
 
       img {
         float: left;
