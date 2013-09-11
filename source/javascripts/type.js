@@ -5,7 +5,7 @@ $(function() {
     $('.type-1').html(),
     $('.type-2').html(),
     $('.type-3').html(),
-    "We're searching your friends next. You should warn them."
+    "I might search your friends next. You should warn them."
   ]
   
   $('.type-1').html('');
